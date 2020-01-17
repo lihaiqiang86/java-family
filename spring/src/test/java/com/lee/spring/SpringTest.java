@@ -13,10 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+/**
+ * @author lihaiqiang
+ * @since 2020/1/15
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(classes = AutoConfig.class)
+@ContextConfiguration(classes = AutoConfig.class)
 //@ContextConfiguration(classes = ManualConfig.class)
-@ContextConfiguration(locations = "classpath:applicationContext.xml")
+//@ContextConfiguration(locations = "classpath:applicationContext.xml")
 public class SpringTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SpringTest.class);

@@ -34,7 +34,7 @@ public class SpringTest {
         loginInfo.setUserName("lihaiqiang");
         loginInfo.setPassword("123456");
         BaseResp resp = authService.login(loginInfo);
-        LOGGER.info("结果: " + JSON.toJSONString(resp));
+        LOGGER.info("login: 结果=" + JSON.toJSONString(resp));
     }
 
     @Test
@@ -43,6 +43,6 @@ public class SpringTest {
         logoutInfo.setUserName("lihaiqiang");
         logoutInfo.setPassword("123456");
         BaseResp resp = authService.logout(logoutInfo);
-        LOGGER.info("结果: " + JSON.toJSONString(resp));
+        LOGGER.info("logout: 结果=" + JSON.toJSONString(resp));
     }
 }

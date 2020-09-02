@@ -19,19 +19,23 @@ package com.lee.pattern.creational.singleton;
  */
 public class Singleton4 {
 
-    private volatile static Singleton4 singleton;
+    private volatile static Singleton4 instance;
 
     private Singleton4() {
     }
 
-    public static Singleton4 getSingleton() {
-        if (singleton == null) {
+    public static Singleton4 getInstance() {
+        if (instance == null) {
             synchronized (Singleton4.class) {
-                if (singleton == null) {
-                    singleton = new Singleton4();
+                if (instance == null) {
+                    instance = new Singleton4();
                 }
             }
         }
-        return singleton;
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("4、双检锁/双重校验锁（DCL，即 double-checked locking）");
     }
 }

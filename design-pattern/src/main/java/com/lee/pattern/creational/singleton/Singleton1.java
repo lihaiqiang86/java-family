@@ -28,4 +28,8 @@ public class Singleton1 {
         }
         return instance;
     }
+
+    public void showMessage() {
+        System.out.println("1、懒汉式，线程不安全");
+    }
 }

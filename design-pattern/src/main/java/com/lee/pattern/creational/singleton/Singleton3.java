@@ -29,4 +29,8 @@ public class Singleton3 {
     public static Singleton3 getInstance() {
         return instance;
     }
+
+    public void showMessage() {
+        System.out.println("3、饿汉式");
+    }
 }

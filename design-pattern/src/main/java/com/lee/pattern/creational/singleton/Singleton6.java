@@ -30,6 +30,7 @@ public enum Singleton6 {
     }
 
     public void showMessage() {
-        System.out.println("Hello world!");
+        System.out.println("6、枚举");
     }
+
 }

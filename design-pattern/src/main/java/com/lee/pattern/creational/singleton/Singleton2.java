@@ -30,4 +30,8 @@ public class Singleton2 {
         }
         return instance;
     }
+
+    public void showMessage() {
+        System.out.println("2、懒汉式，线程安全");
+    }
 }

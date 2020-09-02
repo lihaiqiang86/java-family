@@ -33,4 +33,8 @@ public class Singleton5 {
     public static final Singleton5 getInstance() {
         return SingletonHolder.INSTANCE;
     }
+
+    public void showMessage() {
+        System.out.println("5、登记式/静态内部类");
+    }
 }

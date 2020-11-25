@@ -15,6 +15,14 @@ public class UserServiceImpl implements UserService {
 
     private static final Log LOGGER = LogFactory.getLog(UserServiceImpl.class);
 
+    static {
+        System.out.println("初始化：UserServiceImpl-1");
+    }
+
+    public UserServiceImpl() {
+        System.out.println("初始化：UserServiceImpl-2");
+    }
+
     @Override
     public UserInfo getUserInfo(String userName, String password) {
         LOGGER.info("Get user info: username=" + userName + ",password=" + password);

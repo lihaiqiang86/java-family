@@ -9,6 +9,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,8 +24,23 @@ public class AuthController {
 
     private static final Log LOGGER = LogFactory.getLog(AuthController.class);
 
+    static {
+        System.out.println("初始化：AuthController-1");
+    }
+
+    public AuthController() {
+        System.out.println("初始化：AuthController-2");
+    }
+
     @Autowired
     private AuthService authService;
+
+    @RequestMapping("hello")
+    public String helle(Model model) {
+        LOGGER.info("Hello: request");
+        model.addAttribute("message", "Hello Spring MVC Framework!");
+        return "hello";
+    }
 
     @RequestMapping("login")
     @ResponseBody

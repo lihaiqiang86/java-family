@@ -10,16 +10,24 @@ import com.lee.springmvc.service.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @author lihaiqiang
  * @since 2020/1/14
  */
-@Component(value = "AuthService")
+@Service(value = "AuthService")
 public class AuthServiceImpl implements AuthService {
 
     private static final Log LOGGER = LogFactory.getLog(AuthServiceImpl.class);
+
+    static {
+        System.out.println("初始化：AuthServiceImpl-1");
+    }
+
+    public AuthServiceImpl() {
+        System.out.println("初始化：AuthServiceImpl-2");
+    }
 
     @Autowired
     private UserService userService;

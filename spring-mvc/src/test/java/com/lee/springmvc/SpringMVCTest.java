@@ -42,6 +42,12 @@ public class SpringMVCTest {
     }
 
     @Test
+    public void hello() throws Exception {
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/auth/hello")).andReturn();
+        LOGGER.info("login: 结果=" + result.getModelAndView().toString());
+    }
+
+    @Test
     public void login() throws Exception {
         LoginInfo loginInfo = new LoginInfo();
         loginInfo.setUserName("lihaiqiang");

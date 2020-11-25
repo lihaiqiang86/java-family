@@ -1,6 +1,6 @@
-package com.lee.service;
+package com.lee.spring.service;
 
-import com.lee.domain.UserInfo;
+import com.lee.spring.domain.UserInfo;
 
 /**
  * @author lihaiqiang

@@ -1,11 +1,11 @@
 package com.lee.spring;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,9 +16,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringAop {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpringAop.class);
+    private static final Log LOGGER = LogFactory.getLog(SpringAop.class);
 
-    @Pointcut(value = "execution(* com.lee.service.UserService.getUserInfo(..))")
+    @Pointcut(value = "execution(* com.lee.spring.service.UserService.getUserInfo(..))")
     public void getUserInfo() {
     }
 

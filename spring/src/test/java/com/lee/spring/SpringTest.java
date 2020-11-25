@@ -1,14 +1,14 @@
 package com.lee.spring;
 
 import com.alibaba.fastjson.JSON;
-import com.lee.domain.BaseResp;
-import com.lee.domain.LoginInfo;
-import com.lee.domain.LogoutInfo;
-import com.lee.service.AuthService;
+import com.lee.spring.domain.BaseResp;
+import com.lee.spring.domain.LoginInfo;
+import com.lee.spring.domain.LogoutInfo;
+import com.lee.spring.service.AuthService;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -23,7 +23,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@ContextConfiguration(locations = "classpath:applicationContext.xml")
 public class SpringTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpringTest.class);
+    private static final Log LOGGER = LogFactory.getLog(SpringTest.class);
 
     @Autowired
     private AuthService authService;

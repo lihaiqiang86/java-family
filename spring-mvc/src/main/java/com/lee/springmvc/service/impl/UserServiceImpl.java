@@ -1,9 +1,9 @@
-package com.lee.spring.service;
+package com.lee.springmvc.service.impl;
 
-import com.lee.domain.UserInfo;
-import com.lee.service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.lee.springmvc.domain.UserInfo;
+import com.lee.springmvc.service.UserService;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component(value = "UserService")
 public class UserServiceImpl implements UserService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
+    private static final Log LOGGER = LogFactory.getLog(UserServiceImpl.class);
 
     @Override
     public UserInfo getUserInfo(String userName, String password) {

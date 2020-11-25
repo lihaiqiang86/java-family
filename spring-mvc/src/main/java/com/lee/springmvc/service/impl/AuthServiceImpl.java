@@ -1,14 +1,14 @@
-package com.lee.spring.service;
+package com.lee.springmvc.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.lee.domain.BaseResp;
-import com.lee.domain.LoginInfo;
-import com.lee.domain.LogoutInfo;
-import com.lee.domain.UserInfo;
-import com.lee.service.AuthService;
-import com.lee.service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.lee.springmvc.domain.BaseResp;
+import com.lee.springmvc.domain.LoginInfo;
+import com.lee.springmvc.domain.LogoutInfo;
+import com.lee.springmvc.domain.UserInfo;
+import com.lee.springmvc.service.AuthService;
+import com.lee.springmvc.service.UserService;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Component(value = "AuthService")
 public class AuthServiceImpl implements AuthService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(AuthServiceImpl.class);
+    private static final Log LOGGER = LogFactory.getLog(AuthServiceImpl.class);
 
     @Autowired
     private UserService userService;

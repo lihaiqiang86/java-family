@@ -12,7 +12,7 @@
 
     <context:component-scan base-package="com.lee.springmvc.controller"/>
 
-    <context:component-scan base-package="com.lee.spring.service"/>
+    <context:component-scan base-package="com.lee.springmvc.service"/>
 
     <mvc:annotation-driven>
         <!-- JSON参数支撑 -->

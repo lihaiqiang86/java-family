@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
 
-    <bean id="AuthService" class="com.lee.spring.service.AuthServiceImpl"/>
+    <bean id="AuthService" class="com.lee.spring.service.impl.AuthServiceImpl"/>
 
-    <bean id="UserService" class="com.lee.spring.service.UserServiceImpl"/>
+    <bean id="UserService" class="com.lee.spring.service.impl.UserServiceImpl"/>
 </beans>

@@ -1,8 +1,8 @@
-package com.lee.service;
+package com.lee.spring.service;
 
-import com.lee.domain.BaseResp;
-import com.lee.domain.LoginInfo;
-import com.lee.domain.LogoutInfo;
+import com.lee.spring.domain.BaseResp;
+import com.lee.spring.domain.LoginInfo;
+import com.lee.spring.domain.LogoutInfo;
 
 /**
  * @author lihaiqiang

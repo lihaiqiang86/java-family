@@ -1,13 +1,14 @@
 package com.lee.springmvc;
 
 import com.alibaba.fastjson.JSON;
-import com.lee.domain.LoginInfo;
-import com.lee.domain.LogoutInfo;
+import com.lee.springmvc.controller.AuthController;
+import com.lee.springmvc.domain.LoginInfo;
+import com.lee.springmvc.domain.LogoutInfo;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
@@ -28,7 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
 @ContextConfiguration(locations = {"classpath:spring-mvc-config-test.xml"})
 public class SpringMVCTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpringMVCTest.class);
+    private static final Log LOGGER = LogFactory.getLog(AuthController.class);
 
     @Autowired
     private WebApplicationContext webApplicationContext;

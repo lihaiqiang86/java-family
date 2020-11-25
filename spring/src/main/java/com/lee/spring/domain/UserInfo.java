@@ -1,4 +1,4 @@
-package com.lee.domain;
+package com.lee.spring.domain;
 
 import java.io.Serializable;
 

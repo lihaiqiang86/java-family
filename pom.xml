@@ -15,6 +15,7 @@
         <module>spring-mvc</module>
         <module>design-pattern</module>
         <module>test</module>
+        <module>log</module>
     </modules>
 
     <!--全局属性-->

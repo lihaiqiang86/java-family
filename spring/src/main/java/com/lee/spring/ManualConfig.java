@@ -1,11 +1,11 @@
 package com.lee.spring;
 
-import com.lee.service.AuthService;
-import com.lee.service.UserService;
-import com.lee.spring.service.AuthServiceImpl;
-import com.lee.spring.service.UserServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.lee.spring.service.AuthService;
+import com.lee.spring.service.UserService;
+import com.lee.spring.service.impl.AuthServiceImpl;
+import com.lee.spring.service.impl.UserServiceImpl;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ManualConfig {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ManualConfig.class);
+    private static final Log LOGGER = LogFactory.getLog(AuthServiceImpl.class);
 
     @Bean(value = "AuthService")
     public AuthService getAuthService() {

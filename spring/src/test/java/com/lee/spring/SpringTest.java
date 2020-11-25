@@ -18,9 +18,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @since 2020/1/15
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AutoConfig.class)
+//@ContextConfiguration(classes = AutoConfig.class)
 //@ContextConfiguration(classes = ManualConfig.class)
-//@ContextConfiguration(locations = "classpath:applicationContext.xml")
+@ContextConfiguration(locations = "classpath:applicationContext-auto.xml")
+//@ContextConfiguration(locations = "classpath:applicationContext-manual.xml")
 public class SpringTest {
 
     private static final Log LOGGER = LogFactory.getLog(SpringTest.class);

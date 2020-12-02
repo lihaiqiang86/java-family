@@ -7,7 +7,7 @@ import java.util.logging.*;
  * @author lihaiqiang
  * @since 2020/11/27
  */
-public class Test {
+public class JulTest {
 
     public static void main(String[] args) throws Exception {
         log1();
@@ -18,7 +18,7 @@ public class Test {
 
     private static void log1() {
         // 默认INFO级别
-        Logger logger = Logger.getLogger(Test.class.getName());
+        Logger logger = Logger.getLogger(JulTest.class.getName());
         logger.severe("severe message");
         logger.warning("warning message");
         logger.info("info message");
@@ -30,7 +30,7 @@ public class Test {
 
     private static void log2() {
         // 默认INFO级别
-        Logger logger = Logger.getLogger(Test.class.getName());
+        Logger logger = Logger.getLogger(JulTest.class.getName());
         logger.log(Level.SEVERE, "SEVERE message");
         logger.log(Level.WARNING, "WARNING message");
         logger.log(Level.INFO, "INFO message");
@@ -39,7 +39,7 @@ public class Test {
 
     private static void log3() throws Exception {
         // 1.创建日志记录器对象
-        Logger logger = Logger.getLogger(Test.class.getName());
+        Logger logger = Logger.getLogger(JulTest.class.getName());
 
         // 一、自定义日志级别
         // a.关闭系统默认配置

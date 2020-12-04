@@ -1,6 +1,7 @@
-package com.lee.log.log4j;
+package com.lee.log.slf4j.log4j;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author lihaiqiang
@@ -8,7 +9,7 @@ import org.apache.log4j.Logger;
  */
 public class Person {
 
-    private static final Logger logger = Logger.getLogger(Person.class);
+    private static final Logger logger = LoggerFactory.getLogger(Person.class);
 
     public void speak() {
         logger.trace("Person speak");
@@ -16,6 +17,5 @@ public class Person {
         logger.info("Person speak");
         logger.warn("Person speak");
         logger.error("Person speak");
-        logger.fatal("Person speak");
     }
 }

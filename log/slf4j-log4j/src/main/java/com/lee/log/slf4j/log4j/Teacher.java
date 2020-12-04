@@ -1,6 +1,7 @@
-package com.lee.log.log4j;
+package com.lee.log.slf4j.log4j;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author lihaiqiang
@@ -8,7 +9,7 @@ import org.apache.log4j.Logger;
  */
 public class Teacher extends Person {
 
-    private static final Logger logger = Logger.getLogger(Teacher.class);
+    private static final Logger logger = LoggerFactory.getLogger(Teacher.class);
 
     @Override
     public void speak() {
@@ -17,6 +18,5 @@ public class Teacher extends Person {
         logger.info("Teacher speak");
         logger.warn("Teacher speak");
         logger.error("Teacher speak");
-        logger.fatal("Teacher speak");
     }
 }

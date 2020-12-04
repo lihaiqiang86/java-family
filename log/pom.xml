@@ -16,6 +16,8 @@
         <module>jul</module>
         <module>log4j</module>
         <module>log4j2</module>
+        <module>logback</module>
+        <module>slf4j-log4j</module>
     </modules>
 
 </project>

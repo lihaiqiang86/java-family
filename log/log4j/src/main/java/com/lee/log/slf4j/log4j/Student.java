@@ -1,4 +1,4 @@
-package com.lee.log.log4j;
+package com.lee.log.slf4j.log4j;
 
 import org.apache.log4j.Logger;
 

@@ -16,6 +16,7 @@
         <module>design-pattern</module>
         <module>test</module>
         <module>log</module>
+        <module>protobuf</module>
     </modules>
 
     <!--全局属性-->

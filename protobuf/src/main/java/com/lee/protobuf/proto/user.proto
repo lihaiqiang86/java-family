@@ -1,0 +1,12 @@
+syntax = "proto3";
+package com.lee.protobuf.message;
+
+message LoginMessage{
+  string userName = 1;
+  string password = 2;
+}
+
+message LogoutMessage{
+  string userName = 1;
+  string password = 2;
+}
